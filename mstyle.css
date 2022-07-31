@@ -1,0 +1,429 @@
+body  {
+  margin-top: 8px;
+	font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+	font-size: 8pt;
+}
+
+a {
+	text-decoration: none;
+	color: #5050a0;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a img {
+	border: none;
+}
+
+h1 {
+	color: #404040;
+	font-size: 18px;
+	padding-left:3px;
+	margin-top:4px;
+	margin-bottom:6px;
+}
+
+th {
+	text-align: left;
+	padding-bottom: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+HR {
+	height: 1px;
+	background-color: black;
+	border: 0px;
+}
+
+td {
+}
+
+ul {
+	list-style-position: outside
+}
+
+li {
+	list-style-type:square;
+	padding-bottom: 3px;
+	margin-left: -22px;
+}
+
+/* Wichtig für IE, der andere Defaults als FF hat!! */ 
+p {
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+
+/* Wichtig für IE, der unter jede Form einen Block Margin setzt!! */ 
+form {
+	margin-bottom: 0px;
+}
+
+.normaltext {
+	font-size: 8pt;
+	line-height: 145%;
+}
+
+.pda_text {
+	font-size: 8pt;
+}
+
+.smalltext {
+	font-size: 7pt;
+}
+
+.menu {
+	font-size: 8pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: #425D8C;
+}
+
+.menu_selected {
+	font-size: 8pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: #e80000;
+}
+
+.pda_selected {
+	color: #e80000;
+}
+
+.fancytext {
+	font-size: 8pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FF8242;
+}
+
+.pagenr {
+	text-align: right;
+	margin-right: 5px;
+}
+
+.kursiv {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fancy1 {
+	font-family: arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	color: #a0a0a0;
+}
+
+.fancy2 {
+	font-family: arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	color: #000000;
+}
+
+/* same as above, but for large title text */
+.fancy1t {
+	font-family: arial, sans-serif;
+	font-size: 38px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	color: #425c8c;
+	line-height: 110%;
+}
+
+.fancy2t {
+	font-family: arial, sans-serif;
+	font-size: 38px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	color: #425c8c;
+	line-height: 110%;
+}
+
+#sitelogo {
+	position: absolute;
+	top: 10px;
+	left: 12px;
+}
+
+#adcol_right {
+	position: fixed;
+	top: 10px;
+	margin-left: 3px;
+}
+
+/* Sonderbehandlung IE < 7: position: fixed funktioniert nicht */
+#adcol_right_ie6 {
+	top: 10px;
+	margin-left: 5px;
+	margin-top: -18px;
+}
+
+.shaded_bg {
+	background-color:#E8E8E8;
+}
+
+.pda_bar {
+	background-color:#d8d8d8;
+	font-weight: bold;
+	padding-top: 1px;
+	padding-bottom: 2px;
+	padding-left: 3px;
+}
+
+.active_bg {
+	background-color:#FFF0A0;
+}
+
+.colheader {
+	font-family: arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #c8c8d0;
+	line-height: 21px;
+	padding-left: 8px;
+}
+
+.colheader_link {
+	color: #ffffff;
+}
+
+.colheader_link:hover {
+	text-decoration: none;
+	color: #808080;
+}
+
+.coltitle {
+	font-family: arial, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #808080;
+	padding-top:6px;
+}
+
+.coltext {
+	vertical-align: top;
+	padding-top: 6px;
+	padding-bottom: 4px;
+	padding-right: 2px;
+	padding-left: 4px;
+}
+
+.coltext_cont {
+	vertical-align: top;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+	padding-left: 4px;
+}
+
+.colbg {
+	background-image: url(images/bg08v.jpg);
+	background-repeat: repeat-x;
+}
+
+.coltextsummary {
+	font-weight: bold;
+	color: #000000;
+}
+
+.thumbtable {
+	padding-right: 8px;
+	padding-bottom: 12px;
+}
+
+.pictures {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.listtable {
+	padding-top: 6px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.dropcap { 
+	font-size: 22pt;
+	color: #808080;
+	line-height: 18pt;
+	font-weight: normal;
+	font-style: normal;
+	padding-top: 3pt;
+	margin-bottom: 1pt;
+	margin-right: 2pt;
+	float: left;
+}
+
+.centered { 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img_selected {
+	border: medium dashed #ff8242;
+	float: left;
+}
+
+.img_unselected { 
+	border: medium dashed #ffffff;
+	float: left;
+}
+
+.table1head {
+	background-color: #f0f0e0;
+}
+
+.table2head {
+	color: #606060;
+	background-color: #e2e2e2;
+	font-weight: bold;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 5px;
+}
+
+.table1 {
+	border-style: solid;
+	border-collapse: collapse;
+	border-color: #d0d0c0;
+}
+
+.table2 {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+
+.table2space {
+	background-color: #f4f4e8;
+	line-height: 6px;
+}
+
+.table3 {
+	padding-top: 8px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+
+
+.images_right {
+	margin-left: 10px;
+	margin-top: 6px;
+	margin-bottom : 6px;
+}
+
+.vam {
+	vertical-align:middle;
+}
+
+.pl {
+	padding-top: 3px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.pl_today {
+	background-color: #ffffff;
+	padding-top: 3px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.pl_unanswered {
+	background-color: #FFE4DF;
+	padding-top: 3px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.pl_grey {
+	padding-top: 3px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.pl_my {
+	background-color: #E4FFDF;
+	padding-top: 3px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.a-z_pda {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	font-size: 7pt;
+}
+
+.pda_today {
+	background-color: #d0ffd0;
+}
+
+.errtext {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.oktext {
+	color: #00A000;
+	font-weight: bold;
+}
+
+.msgline {
+	text-align:right;
+	padding-top:3px;
+	padding-bottom:9px;
+	padding-right:6px;
+}
+
+.pda_err {
+	color: red;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.pda_msg {
+	padding-top:5px;
+	padding-bottom:5px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.dropdown {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ffE0B0;
+	cursor: pointer;
+}
+
+
+/* avoid border inheritance of javascript dropdown code */
+.dropdown_head {
+	border-style: none;
+}
+
+.grey {
+	color: #a0a0a0;
+}
+
+.led {
+	margin-bottom: -6px;
+	margin-left: 5px;
+}
