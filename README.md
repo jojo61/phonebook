@@ -27,6 +27,7 @@ A Phonebook for asterisk
     o List alphabethical Names
     o Dial from Phonebook with one click
 	o Cancel ongoing call
+	o Works with asterisk 13, 14, 16 and above 
  
 
 
