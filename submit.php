@@ -100,14 +100,15 @@ case 'hangup':
 case 'save':
     if ($_POST['name'] != "") {
         $asm1 = new AGI_AsteriskManager(NULL,$opts_config);
+        $ht = htmlentities($_POST['name']);
         if($asm1->connect()) {
-            $save1 = $asm1->command("database put cidname ".$_POST['cid']." ".$_POST['name']);
+            $save1 = $asm1->command("database put cidname ".$_POST['cid']." \"".$ht."\"");
             $asm1->disconnect();
         }
         unset($asm1);
     }
     header("Location:" . $url ,true, 302);
-    exit();
+    exit(); 
     break;
 
 case 'delete':

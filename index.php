@@ -108,6 +108,7 @@ if($asm->connect())
 		if (strpos('z'.$namefilter,"*") > 0) {       /* suchem vom Anfang */
 			$nf = str_replace("*","",$namefilter);
 			$nf = strtolower($nf);
+                        $nf = htmlentities($nf);
 			foreach($numbers as $key => $value) {
 				$low = strtolower($value);
 				if (str_starts_with($low,$nf)) {
@@ -118,7 +119,8 @@ if($asm->connect())
 			foreach($numbers as $key => $value) {    /* suchen in allem */
 				$low = strtolower($value);
 				$nf = strtolower($namefilter);
-				$a = strpos('z'.$low,$namefilter) - 1;
+                                $nf = htmlentities($nf);
+				$a = strpos('z'.$low,$nf) - 1;
 				if ($a  >= 0) {
 					$filtered[$key] = $value;
 				}
@@ -165,7 +167,6 @@ if($asm->connect())
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
 
-	<link rel="shortcut icon" href="http://192.168.0.98/phonebook/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="mstyle.css">
 
 	<script type="text/javascript">
