@@ -60,7 +60,7 @@ case 'dial':
 
     if($asm->connect()) {
         $args = array("Channel" => $channel, "Context" => $context, "Priority" => 1, "Timeout" => $timeout, "Variable" => $variable, "CallerID" => $_POST['myphone'], "Exten" => $_POST['cid'],"Async" => true,"ActionID" => "testvar" );
-        $call = $asm->Originate($channel,$_POST['cid'],$context,1,NULL,NULL,$timeout,$_POST['myphone'],$variable,NULL,true,"testvar");
+        $call = $asm->Originate($channel,$_POST['cid'],$context,1,NULL,NULL,$timeout,$_POST['cid'],$variable,NULL,true,"testvar");
         /*$call = $asm->Originate($args);*/
         $asm->disconnect();
         
